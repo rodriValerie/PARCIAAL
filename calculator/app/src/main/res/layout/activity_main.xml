@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="134dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/numero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUMERO 1" />
+
+        <EditText
+            android:id="@+id/primerNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/numero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUMERO 2" />
+
+        <EditText
+            android:id="@+id/segundoNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="143dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/multiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/resta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="153dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:layout_editor_absoluteX="2dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESULTADO" />
+
+        <TextView
+            android:id="@+id/rvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/factorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorial"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rvFact"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Respuesta factorial" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
